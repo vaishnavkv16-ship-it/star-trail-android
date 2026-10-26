@@ -2,8 +2,8 @@ name: Build Android APK
 
 on:
   push:
-    branches: [ main ]
-
+    branches: [ "*" ]
+  workflow_dispatch: # This adds a manual "Run workflow" button!
 jobs:
   build:
   runs-on: ubuntu-latest
